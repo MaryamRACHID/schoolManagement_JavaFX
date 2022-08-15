@@ -9,3 +9,11 @@ Windows 7, Windows 8, Windows 10, macOS and Linux. Starting with JavaFX 1.2, Ora
 ## Screens from the app
 ### Home :
 ![img.png](img.png)
+### Login :
+![img_1.png](img_1.png)
+### Admin interface :
+![img_2.png](img_2.png)
+![img_3.png](img_3.png)
+![img_4.png](img_4.png)
+### Students interface :
+![img_5.png](img_5.png)

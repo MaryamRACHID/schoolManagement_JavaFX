@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #346784;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.AfterLogin">
+   <children>
+      <Button fx:id="logout" layoutX="180.0" layoutY="150.0" mnemonicParsing="false" onAction="#userLogOut" prefHeight="101.0" prefWidth="241.0" text="Se déconnecter" />
+   </children>
+</AnchorPane>

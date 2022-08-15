@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="BG" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1000.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home.HomeController">
+   <children>
+      <Pane prefHeight="59.0" prefWidth="1000.0" style="-fx-background-color: #3d86f4;">
+         <children>
+            <Button fx:id="log" layoutX="926.0" layoutY="12.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: TRANSPARANT;">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@1.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <AnchorPane layoutX="325.0" prefHeight="59.0" prefWidth="350.0">
+               <children>
+                  <GridPane layoutY="1.0" prefHeight="59.0" prefWidth="350.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="10.0" prefWidth="117.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="10.0" prefWidth="117.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="117.0" style="-fx-background-color: Transparant;" text="Accueil" textFill="WHITE" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="70.0" prefWidth="117.0" style="-fx-background-color: Transparant;" text="Contact" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="117.0" style="-fx-background-color: Transparant;" text="A propos" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+            <Label layoutX="30.0" layoutY="12.0" text="ENSAH" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="31.0" layoutY="80.0" prefHeight="522.0" prefWidth="938.0" style="-fx-background-color: #EEEEEE; -fx-opacity: 100%;">
+         <children>
+            <AnchorPane layoutX="547.0" layoutY="14.0" prefHeight="415.0" prefWidth="377.0">
+               <children>
+                  <ImageView fitHeight="415.0" fitWidth="386.0" layoutX="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="33.0" layoutY="14.0" prefHeight="36.0" prefWidth="221.0" text="ENSA d'Al-Hoceima" textFill="#464646">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Text fill="#464646" layoutX="33.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="l'Ecole Nationale des Sciences Appliquées d'Al-Hoceima (ENSAH) est un établissement public d'enseignement supérieur relevant de l'université Abdelmalek Essaadi. Sa création s'inscrit dansl'optique de favoriser la formation des ingénieurs d'Etat hautementqualifiés dans les spécialités les plus ouvertes et susceptiblesde connaître d'importants développements au sein du tissu socio-économique régional et national. Le positionnementde l'Ecole contribuera à lui conférer une dimension euro-méditerranéenne et à répondre aux besoins régionaux et nationaux en matière de formation en ingénierie.L'Ecole Nationale des Sciences Appliquées Al-Hoceimadispense des formations de deux années préparatoireset trois années de spécialités dans les domaines suivants : " wrappingWidth="496.13671875">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text fill="#464646" layoutX="33.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Génie Informatique, Génie Civil, Génie de l'eau et de l'Environnement, Génie énergétique et énergies renouvelables, Génie mécanique et L’ingénierie des données." wrappingWidth="891.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Label layoutX="357.0" layoutY="611.0" prefHeight="39.0" prefWidth="286.0" text="Copyright © 2021 - Tous droits réservés" textFill="#464646">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

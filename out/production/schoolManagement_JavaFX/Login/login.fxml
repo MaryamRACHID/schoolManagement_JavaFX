@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="BG" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1000.0" styleClass="BG" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.LoginController">
+   <children>
+      <AnchorPane layoutX="35.0" layoutY="110.0" prefHeight="489.0" prefWidth="925.0">
+         <children>
+            <AnchorPane prefHeight="520.0" prefWidth="380.0" style="-fx-background-color: #3d86f4;">
+               <children>
+                  <AnchorPane layoutX="33.0" layoutY="136.0" prefHeight="248.0" prefWidth="315.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="48.0" layoutY="43.0" style="-fx-border-color: #FFF; -fx-border-width: 10PX 0PX;" text="Univ" textFill="WHITE">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="92.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="48.0" layoutY="218.0" text="Bienvenue sur la platforme Univ " textFill="WHITE">
+                           <font>
+                              <Font name="Bookman Old Style Italic" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
+            <AnchorPane layoutX="380.0" prefHeight="520.0" prefWidth="550.0">
+               <children>
+                  <AnchorPane prefHeight="520.0" prefWidth="550.0" style="-fx-background-color: #FFF; -fx-opacity: 80%;" />
+                  <Label layoutX="206.0" layoutY="39.0" prefHeight="36.0" prefWidth="139.0" text="Bienvenue !" textFill="#3d86f4">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="458.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="username" layoutX="65.0" layoutY="117.0" prefHeight="40.0" prefWidth="420.0" promptText="Entrer votre nom d'utilisateur" style="-fx-background-color: transparant; -fx-border-color: #3d86f4; -fx-border-width: 0px 0px 1.5px 0px;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="458.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                     </image>
+                  </ImageView>
+                  <PasswordField fx:id="password" layoutX="65.0" layoutY="190.0" prefHeight="40.0" prefWidth="420.0" promptText="Saisir votre mot de passe" style="-fx-background-color: TRANSPARANT; -fx-border-color: #3d86f4; -fx-border-width: 0px 0px 1.5px 0px;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </PasswordField>
+                  <Button fx:id="button" layoutX="200.0" layoutY="300.0" mnemonicParsing="false" onAction="#userLogIn" prefHeight="40.0" prefWidth="151.0" style="-fx-background-color: #3d86f4; -fx-border-radius: 50%;" text="Se connecter" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Glow level="0.0" />
+                     </effect>
+                  </Button>
+                  <CheckBox alignment="TOP_LEFT" depthTest="ENABLE" layoutX="65.0" layoutY="260.0" mnemonicParsing="false" styleClass="box" stylesheets="@application.css" text="Se rappeler de moi" textFill="#8d8d8d">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </CheckBox>
+                  <Label fx:id="wrongLogIn" layoutX="61.0" layoutY="93.0" prefHeight="17.0" prefWidth="290.0" textFill="#e80000" />
+                  <Button layoutX="203.0" layoutY="357.0" mnemonicParsing="false" style="-fx-background-color: transparant;" text="Mot de passe oublié ?" textFill="#464646">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label layoutX="132.0" layoutY="477.0" prefHeight="39.0" prefWidth="286.0" text="Copyright © 2021 - Tous droits réservés" textFill="#464646">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="233.0" layoutY="384.0" mnemonicParsing="false" style="-fx-background-color: transparant;" text="Questions ?" textFill="#464646">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Pane prefHeight="59.0" prefWidth="1000.0" style="-fx-background-color: #3d86f4;">
+         <children>
+            <Button layoutX="926.0" layoutY="12.0" mnemonicParsing="false" style="-fx-background-color: TRANSPARANT;">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Home/1.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <AnchorPane layoutX="325.0" prefHeight="59.0" prefWidth="350.0">
+               <children>
+                  <GridPane layoutY="1.0" prefHeight="59.0" prefWidth="350.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="10.0" prefWidth="117.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="10.0" prefWidth="117.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="117.0" style="-fx-background-color: Transparant;" text="Accueil" textFill="WHITE" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="70.0" prefWidth="117.0" style="-fx-background-color: Transparant;" text="Contact" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="117.0" style="-fx-background-color: Transparant;" text="A propos" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+            <Label layoutX="30.0" layoutY="12.0" text="ENSAH" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

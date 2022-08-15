@@ -1,0 +1,17 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.BG{
+	-fx-background-color: rgb(0, 0, 0);
+	-fx-background-image: url("ENSAH.jpg");
+	-fx-background-size: 100% 100%;
+	-fx-background-radius: 10;
+	-fx-opacity: 100%;
+}
+
+.check-box .box {
+
+-fx-background-color: white;
+-fx-border-color:#b2b2b2;
+-fx-border-radius:3px; 
+
+}
